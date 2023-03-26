@@ -69,24 +69,23 @@ const api = {
     return `${day} ${date} ${month} ${year}`;
   }
 
-  function getYourFishOn (weather){
-    let fishOn = document.querySelector('.toFishOrNot')
+  function getYourFishOn(weather){
+    let fishOn = document.querySelector('.getYourFishOn .toFishOrNot')
     console.log(weather.main.pressure * 0.0295301)
-
-    if (weather.main.pressure * 0.0295301 >= 30.50) {
-         console.log("1")
-        fishOn.innerHTML = "<p>Based on the current barometric pressure.Fish are usually slower, moderately active, feed halfheartedly, and will most likely stay near the bottom.</p>"
+    let fishData = weather.main.pressure * 0.0295301;
+  
+    if (fishData >= 30.50){
+      console.log("1")///
+      fishOn.innerHTML = "<p>Based on the current barometric pressure.Fish are usually slower, moderately active, feed halfheartedly, and will most likely stay near the bottom.</p>"
     }
-    if (weather.main.pressure * 0.0295301 >= 29.70 && weather.main.pressure <= 30.40) {
-         console.log("2")
+    if (fishData >= 29.70 && fishData <= 30.40){
+        console.log("2")
         fishOn.innerHTML = "<p>Based on the current barometric pressure.Perfect, normal fishing conditions. Use different baits and gear to meet the needs of the fish.</p>"
     }
-    if (weather.main.pressure * 0.0295301 <= 29.60) {
-         console.log("3")
-        fishOn.innerHTML = "<p>Based on the current barometric pressure.Fish are usually less active, nervous, spook easily, and bite slowly. Go at the fish slowly in deeper water or near cover.</p>"
-    }
-
-
+    if (fishData <= 29.60){
+      console.log("3")
+          fishOn.innerHTML = "<p>Based on the current barometric pressure.Fish are usually less active, nervous, spook easily, and bite slowly. Go at the fish slowly in deeper water or near cover.</p>"
+      }
 
   }
   function setWeatherPic(weather) {
