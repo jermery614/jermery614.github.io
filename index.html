@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="app-wrap">
+    <header>
+      <section>
+        <h1 id="inputTitle"><span><i>Ohio Fishing Buddy</i></span></h1>
+        <h5 id="advertisment">* Other states comming soon*</h5>
+        <h5 id="description">Get current weather and fishing information.</h5>
+        <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+        <!-- <input type="text0" autocomplete="off" class="lon-box" placeholder="Search Longitude"/><br>
+        <input type="text0" autocomplete="off" class="lat-box" placeholder="Search Latitude"/><br> -->
+      </section>
+    </header>
+    <main>
+      <section class="location">
+        <div class="city"></div>
+        <div class="date"></div>
+        <div class="lonLat"></div>
+        <div class="sunrise"></div>
+      </section>
+      <div class="current">
+        <section class="currentTempDisplay">
+            <div class="temp"><span></span></div>
+            <div class="currentImg" id="tempImg"></div>
+        </section>
+        <section class="currentConditions">
+            <div class="windSpeed"></div>
+            <div class="weather"></div>
+            <div class="hi-low"></div>
+            <div class="pressure"></div>
+        </section>
+        <section class="getYourFishOn">
+            <div class="toFishOrNot"></div>
+        </section>
+        <section class="quotes">
+            <div></div>
+        </section>
+        <section>
+            <div class="species"></div>
+        </section>
+        <section class="quotes"></section>
+      </div>
+      
+    </main>
+  </div>
+  <script src="main.js"></script>
+  
+</body>
+</html>
