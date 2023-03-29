@@ -4,24 +4,39 @@ const api = {
   }
   
   const searchbox = document.querySelector('.search-box');
+  const cityName = localStorage.getItem("City")
+  // localStorage.clear();
+  if (cityName){
+    // localStorage.clear();
+    searchbox.value = cityName
+    // localStorage.clear();
+  }
   searchbox.addEventListener('keypress', setQuery);
   
   function setQuery(evt) {
-    if (evt.keyCode == 13) {
-      getResults(searchbox.value);
+    if (evt.keyCode == 13)  
+    {
+      const cityName = localStorage.getItem("City")
+      // console.log(cityName)
+      if (cityName){
+        localStorage.clear();
+        searchbox.value = cityName
+        getResults(cityName)
+      } else {
+        getResults(searchbox.value);
+      localStorage.setItem("City", searchbox.value);
+      }
     } 
   }
-  
+
   function getResults (query) {
     fetch(`${api.base}weather?q=${query}&units=imperial&APPID=${api.key}`)
       .then(weather => {
         return weather.json();
       }).then(displayResults);
       
-      
-      
   }
-  
+
   function displayResults (weather) {
     console.log(weather);
     setWeatherPic(weather);
@@ -104,3 +119,6 @@ const api = {
         imgHere.innerHTML = "<img src=\"./images/cloudy.png\">";
     }
   }
+
+ 
+ 
