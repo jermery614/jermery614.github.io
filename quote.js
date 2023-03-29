@@ -13,7 +13,7 @@ fetch('https://famous-quotes4.p.rapidapi.com/random?category=happiness&count=1',
 	.then(response => {
 		for (let data of response){
 			console.log(data)
-			dataFactsEL.innerHTML = "Quote of the day: " +` --- ${data.text}` + " " +" "+ "---- "+ `${data.author}`;
+			dataFactsEL.innerHTML = "Quote of the day: " +` --- ${data.text}` + " " +" "+ "---- "+ `By: ${data.author}`;
 			
 		}
 	})
