@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin="">
+     
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
   <link rel="stylesheet" href="main.css" />
-  
 </head>
 <body>
   <div class="app-wrap">
     <header>
       <section>
+        <p id="fishExplination">Click of a fish to see the information about the species</p>
+        <section class="fish">
+          
+          <input type="image" src="./images/Pike.png" id="Pike">
+          <input type="image" src="./images/largeMountBass.png" id="large">
+          <input type="image" src="./images/smallMouthBass.png" id="small">
+        </section>
         <div class="quotes"></div>
+        <section class="fishSpecies">
+          <div class="species"></div>
+      </section>
         <h1 id="inputTitle"><span><i>Ohio Fishing Buddy</i></span></h1>
         <h5 id="advertisment">* Other states comming soon*</h5>
         <h5 id="description">Get current weather and fishing information.</h5>
         <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
-        <!-- <input type="text0" autocomplete="off" class="lon-box" placeholder="Search Longitude"/><br>
-        <input type="text0" autocomplete="off" class="lat-box" placeholder="Search Latitude"/><br> -->
       </section>
     </header>
     <main>
@@ -42,13 +58,10 @@
         <section class="getYourFishOn">
             <div class="toFishOrNot"></div>
         </section>
-        <!-- <section class="quotes">
-            <div></div>
-        </section> -->
-        <section class="myMap"></section>
-        <section>
-            <div class="species"></div>
+        <section class="map">
+          <div id="map"></div>
         </section>
+        
         
       </div>
       
@@ -56,6 +69,12 @@
   </div>
   <script src="main.js"></script>
   <script src="quote.js"></script>
+  <script src="map.js"></script>
+  <script src="fish.js"></script>
+  <script>
+    
+
+  </script>
   
 </body>
 </html>
