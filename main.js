@@ -2,7 +2,6 @@ const api = {
     key: "0aacc5e2496379b32f0b648d2c189d0b",
     base: "https://api.openweathermap.org/data/2.5/"
   }
-  
   const searchbox = document.querySelector('.search-box');
   const cityName = localStorage.getItem("City")
   // localStorage.clear();
@@ -12,7 +11,7 @@ const api = {
     // localStorage.clear();
   }
   searchbox.addEventListener('keypress', setQuery);
-  
+
   function setQuery(evt) {
     if (evt.keyCode == 13)  
     {
@@ -28,7 +27,6 @@ const api = {
       }
     } 
   }
-
   function getResults (query) {
     fetch(`${api.base}weather?q=${query}&units=imperial&APPID=${api.key}`)
       .then(weather => {
@@ -36,11 +34,13 @@ const api = {
       }).then(displayResults);
       
   }
-
   function displayResults (weather) {
     console.log(weather);
     setWeatherPic(weather);
     getYourFishOn(weather);
+    myMap(weather);
+    getSpecies();
+    
     
     let city = document.querySelector('.location .city');
     // city.innerText = `${weather.name}, ${weather.sys.country}`;
@@ -69,9 +69,10 @@ const api = {
     hilow.innerText = `Low: ${Math.round(weather.main.temp_min)}°F / High: ${Math.round(weather.main.temp_max)}°F`;
 
     let pressure = document.querySelector('.current .pressure');
-    pressure.innerHTML = `Atmospheric Pressure: ${Math.round(weather.main.pressure *0.0295301)} hPa`
+    pressure.innerHTML = `Atmospheric Pressure: ${Math.round(weather.main.pressure *0.0295301)} hPa`;
+
+    
   }
-  
   function dateBuilder (d) {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -83,7 +84,6 @@ const api = {
   
     return `${day} ${date} ${month} ${year}`;
   }
-
   function getYourFishOn(weather){
     let fishOn = document.querySelector('.getYourFishOn .toFishOrNot')
     console.log(weather.main.pressure * 0.0295301)
@@ -119,6 +119,8 @@ const api = {
         imgHere.innerHTML = "<img src=\"./images/cloudy.png\">";
     }
   }
+
+
 
  
  
