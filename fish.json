@@ -1,0 +1,37 @@
+{
+ "fish":[
+    {
+        "name":"Large Mouth Bass", 
+        "tips": "Fish close to cover in muddy and heavily stained water and  Dark-colored baits work well in the spring and lighter colors are best in the fall.",
+        "location": "Largemouth bass are often located close to or immediately next to cover after a strong cold front.",
+        "tackle": "Medium-to-heavy baitcasting, spinning or spin cast rods with 8- to 17-pound test line. ",
+        "spring": " March- April: Peak Activity. Use fast action to imitate crawfish or creature bait like lizzard in blue-lack or green pumpkin.",
+        "presummer": " May: Excellent Activity. Use medium diving crankbaits in firetiger and chartreuse. Spinner baits in chartreuse and white.",
+        "summer": "June - Mid September.  Medium diving crankbaites in firetiger and chartreuse. Spinnerbaits in chartreuse. Look for bait fish.",
+        "fall": "Mid September - November. Excellent Activity. Use Jig & Pig, creature baits, lizard or tube baits in shad or silver hues. White spinnerbaits or silver-colored shallow diving crankbaits.",
+        "winter": " December - Feburary. Fair Activity. Vertical jigging spoons and slow retrieve of Jig & Pig."
+    }, 
+    {
+        "name":"Small Mouth Bass", 
+        "tips": "Smallmouth bass use pools to rest and feed and will move to runs and riffles below pools when most actively feeding.",
+        "location": "In summer bass avoid direct sunlight when they can. Fish deep pools, cover and shaded areas of the stream.",
+        "tackle": "Light-to-medium spin-casting outfit with 4- to 10-pound test fishing line or a 5 or 6 weight fly rod.",
+        "spring": " March- April: Good Activity. Use baits that imitate baitfish. White and silvery tubes, twister tail jigs and spinnersLook for areas with rocky bottoms and slow moving water. ",
+        "presummer": " May: Good Activity.Use baits that imitate baitfish. White and silvery tubes, twister tail jigs and spinners.",
+        "summer": "June - Mid September.  Use crankbaits and plastics that imitate crayfish. Retrieve with a motion that will allow the bait to hit the bottom to simulate a swimming crayfish. Chartreuse jigs with spinners are also good.",
+        "fall": "Mid September - November. Excellent Activity.Crayfish imitating baits still work but fish are switching back to fish. Use inline spinners, tubes and jigs in lighter colors. Cast baits across pools and runs retrieve at medium rate with twitching action.",
+        "winter": " December - Feburary. Fair Activity.Fish imitating baits will work best. Retrieve baits slowly.Fish in deeper pools around any cover available."
+    },
+    {
+        "name":"Northern Pike", 
+        "tips": "Northern pike reproduce over aquatic vegetation so concentrate fishing efforts in these areas.",
+        "location": "Primary spots are in northern Ohio.",
+        "tackle": "Medium weight spinning or baitcasting tackle with 10-pound test line for fishing live bait and a 6- to 70-feet long medium/heavy rod with 12- to 16-pound test line for fishing crankbaits or trolling.",
+        "spring": " March- April: Fair Activity.Live or dead bait; spinnerbaits with Colorado blades; suspending stickbaits like Husky Jerks; muskie lures such as Bull Dawgs.",
+        "presummer": " May: Good Activity. Soft plastics like Slug-Go or Berkley Gulps; buzzbaits; spinnerbaits and smaller Muskie lures. Noisy, bright, crankbaits with a medium-fast retrieve near vegetation and rock points; occasionally “pump” the lure on the retrieve.",
+        "summer": "June - Mid September. Very Poor Fishing during the Summer.The summer bite is very slow. Try Mepps spinners or large wiggling crankbaits with rattles. Fish the thermocline or springs entering water in the mornings.",
+        "fall": "Mid September - November. Good Activity.Spinnerbaits; buzzbaits; large, brightly-colored, deep-diving crankbaits bouncing off the bottom. Skim the top of vegetation and deepwater structures.",
+        "winter": " December - Feburary. Fair Activity. Large minnows and suckers through ice; Dardevle, Bluefox and other small wobbling spoons and spinnerbaits. Dead bait fished near the bottom under a bobber. Cast with a slow retrieve."
+    }
+ ]   
+}
