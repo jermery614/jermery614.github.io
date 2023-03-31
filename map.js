@@ -12,6 +12,3 @@ L.marker([weather.coord.lat, weather.coord.lon]).addTo(map)
     // .bindPopup("You're here.")
     // .openPopup();
 }
-
-
-
