@@ -24,7 +24,7 @@ function getLarge() {
     .then(res => res.json())
     // .then(res => console.log(res))
     .then(res => {
-        speciesEL.innerHTML =`<span>&#149;</span> <u>Name</u>: ${res.fish[0].name}`+"<br>"+`-> <u>Location</u>: ${res.fish[0].location}`+"<br>"+`-> <u>Tips</u>: ${res.fish[0].tips}`+"<br>"+`-> <u>Tackle</u>: ${res.fish[0].tackle}`+"<br>"+`-> <u>Pre-Summer</u>: ${res.fish[0].presummer}`+"<br>"+`-> <u>Summer</u>: ${res.fish[0].summer}`+"<br>"+`-> <u>Fall</u>: ${res.fish[0].fall}`+"<br>"+`-> <u>Winter</u>: ${res.fish[0].winter}`+"<br>"+`-> <u>Spring</u>: ${res.fish[0].spring}`
+        speciesEL.innerHTML =`<span>&#149;</span> <u>Name</u>: ${res.fish[0].name}`+"<br>"+`<span>&#149;</span> <u>Location</u>: ${res.fish[0].location}`+"<br>"+`<span>&#149;</span> <u>Tips</u>: ${res.fish[0].tips}`+"<br>"+`<span>&#149;</span> <u>Tackle</u>: ${res.fish[0].tackle}`+"<br>"+`<span>&#149;</span> <u>Pre-Summer</u>: ${res.fish[0].presummer}`+"<br>"+`<span>&#149;</span> <u>Summer</u>: ${res.fish[0].summer}`+"<br>"+`<span>&#149;</span> <u>Fall</u>: ${res.fish[0].fall}`+"<br>"+`<span>&#149;</span> <u>Winter</u>: ${res.fish[0].winter}`+"<br>"+`<span>&#149;</span> <u>Spring</u>: ${res.fish[0].spring}`
     })
     .catch(err => console.error(err));
 
@@ -37,7 +37,7 @@ function getPike(){
     .then(res => res.json())
     // .then(res => console.log(res))
     .then(res => {
-        speciesEL.innerHTML =`<span>&#149;</span> <u>Name</u>: ${res.fish[2].name}`+"<br>"+`-> <u>Location</u>: ${res.fish[2].location}`+"<br>"+`-> <u>Tips</u>: ${res.fish[2].tips}`+"<br>"+`-> <u>Tackle</u>: ${res.fish[2].tackle}`+"<br>"+`-> <u>Pre-Summer</u>: ${res.fish[2].presummer}`+"<br>"+`-> <u>Summer</u>: ${res.fish[2].summer}`+"<br>"+`-> <u>Fall</u>: ${res.fish[2].fall}`+"<br>"+`-> <u>Winter</u>: ${res.fish[2].winter}`+"<br>"+`-> <u>Spring</u>: ${res.fish[2].spring}`
+        speciesEL.innerHTML =`<span>&#149;</span> <u>Name</u>: ${res.fish[2].name}`+"<br>"+`<span>&#149;</span> <u>Location</u>: ${res.fish[2].location}`+"<br>"+`<span>&#149;</span> <u>Tips</u>: ${res.fish[2].tips}`+"<br>"+`<span>&#149;</span> <u>Tackle</u>: ${res.fish[2].tackle}`+"<br>"+`<span>&#149;</span> <u>Pre-Summer</u>: ${res.fish[2].presummer}`+"<br>"+`<span>&#149;</span> <u>Summer</u>: ${res.fish[2].summer}`+"<br>"+`<span>&#149;</span> <u>Fall</u>: ${res.fish[2].fall}`+"<br>"+`<span>&#149;</span> <u>Winter</u>: ${res.fish[2].winter}`+"<br>"+`<span>&#149;</span> <u>Spring</u>: ${res.fish[2].spring}`
     })
     .catch(err => console.error(err));
 
@@ -52,7 +52,7 @@ function getSmall(){
     .then(res => res.json())
     // .then(res => console.log(res))
     .then(res => {
-        speciesEL.innerHTML =`<span>&#149;</span> <u>Name</u>: ${res.fish[1].name}`+"<br>"+`-> <u>Location</u>: ${res.fish[1].location}`+"<br>"+`-> <u>Tips</u>: ${res.fish[1].tips}`+"<br>"+`-> <u>Tackle</u>: ${res.fish[1].tackle}`+"<br>"+`-> <u>Pre-Summer</u>: ${res.fish[1].presummer}`+"<br>"+`-> <u>Summer</u>: ${res.fish[1].summer}`+"<br>"+`-> <u>Fall</u>: ${res.fish[1].fall}`+"<br>"+`-> <u>Winter</u>: ${res.fish[1].winter}`+"<br>"+`-> <u>Spring</u>: ${res.fish[1].spring}`
+        speciesEL.innerHTML =`<span>&#149;</span> <u>Name</u>: ${res.fish[1].name}`+"<br>"+`<span>&#149;</span> <u>Location</u>: ${res.fish[1].location}`+"<br>"+`<span>&#149;</span> <u>Tips</u>: ${res.fish[1].tips}`+"<br>"+`<span>&#149;</span> <u>Tackle</u>: ${res.fish[1].tackle}`+"<br>"+`<span>&#149;</span> <u>Pre-Summer</u>: ${res.fish[1].presummer}`+"<br>"+`<span>&#149;</span> <u>Summer</u>: ${res.fish[1].summer}`+"<br>"+`<span>&#149;</span> <u>Fall</u>: ${res.fish[1].fall}`+"<br>"+`<span>&#149;</span> <u>Winter</u>: ${res.fish[1].winter}`+"<br>"+`<span>&#149;</span> <u>Spring</u>: ${res.fish[1].spring}`
     })
     .catch(err => console.error(err));
 
@@ -64,7 +64,7 @@ function getSteel(){
     .then(res => res.json())
     // .then(res => console.log(res))
     .then(res => {
-        speciesEL.innerHTML =`<span>&#149;</span> <u>Name</u>: ${res.fish[3].name}`+"<br>"+`-> <u>Location</u>: ${res.fish[3].location}`+"<br>"+`-> <u>Tips</u>: ${res.fish[3].tips}`+"<br>"+`-> <u>Tackle</u>: ${res.fish[3].tackle}`+"<br>"+`-> <u>Pre-Summer</u>: ${res.fish[3].presummer}`+"<br>"+`-> <u>Summer</u>: ${res.fish[3].summer}`+"<br>"+`-> <u>Fall</u>: ${res.fish[3].fall}`+"<br>"+`-> <u>Winter</u>: ${res.fish[3].winter}`+"<br>"+`-> <u>Spring</u>: ${res.fish[3].spring}`
+        speciesEL.innerHTML =`<span>&#149;</span> <u>Name</u>: ${res.fish[3].name}`+"<br>"+`<span>&#149;</span> <u>Location</u>: ${res.fish[3].location}`+"<br>"+`<span>&#149;</span> <u>Tips</u>: ${res.fish[3].tips}`+"<br>"+`<span>&#149;</span> <u>Tackle</u>: ${res.fish[3].tackle}`+"<br>"+`<span>&#149;</span> <u>Pre-Summer</u>: ${res.fish[3].presummer}`+"<br>"+`<span>&#149;</span> <u>Summer</u>: ${res.fish[3].summer}`+"<br>"+`<span>&#149;</span> <u>Fall</u>: ${res.fish[3].fall}`+"<br>"+`<span>&#149;</span> <u>Winter</u>: ${res.fish[3].winter}`+"<br>"+`<span>&#149;</span> <u>Spring</u>: ${res.fish[3].spring}`
     })
     .catch(err => console.error(err));
 
