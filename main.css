@@ -178,6 +178,9 @@
   #Pike ,#large, #small, #steelhead {
     border-radius: 2em;
   }
+ #Pike:active ,#large:active, #small:active, #steelhead:active {
+    background: black;
+  }
   .species{
     margin-left: 4em;
     text-shadow: 2px 1px black;
