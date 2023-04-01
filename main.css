@@ -180,12 +180,19 @@
   }
   .species{
     margin-left: 4em;
-    color: white;
-    font-size: large;
+    text-shadow: 2px 1px black;
+    color:#fff;
+    font-size: 23px;
     font-style: italic;
     transition: width 2s, height 4s;
+    
   }
   #fishExplination{
     color: #fff;
     margin: .75em;
+  }
+  .clearCity{
+    height: 35px;
+    width: 5%;
+    border-radius: 1em;
   }
