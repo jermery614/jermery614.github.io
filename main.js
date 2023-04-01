@@ -2,13 +2,20 @@ const api = {
     key: "0aacc5e2496379b32f0b648d2c189d0b",
     base: "https://api.openweathermap.org/data/2.5/"
   }
-  const searchbox = document.querySelector('.search-box');
+
+const searchbox = document.querySelector('.search-box');
   const cityName = localStorage.getItem("City")
-  // localStorage.clear();
+  
+function clearStorage(){
+    localStorage.clear();
+    window.location.reload();
+  }
+
+  
+
+
   if (cityName){
-    // localStorage.clear();
-    searchbox.value = cityName
-    // localStorage.clear();
+    searchbox.value = cityName 
   }
   searchbox.addEventListener('keypress', setQuery);
 
@@ -18,7 +25,7 @@ const api = {
       const cityName = localStorage.getItem("City")
       // console.log(cityName)
       if (cityName){
-        localStorage.clear();
+        // localStorage.clear();
         searchbox.value = cityName
         getResults(cityName)
       } else {
