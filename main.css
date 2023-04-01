@@ -170,11 +170,9 @@
 
   }
   .fish{
-    /* position: relative; */
+    
     display: flex;
-    /* transition: transform 1.55s; */
-    /* justify-content: space-between; */
-    /* width: 90%;  */
+   
   }
  
   #Pike ,#large, #small, #steelhead {
