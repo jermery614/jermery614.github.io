@@ -9,10 +9,10 @@ searchPike.addEventListener('click', getPike);
 searchSmall.addEventListener('click', getSmall);
 searchSteel.addEventListener('click', getSteel);
 
-searchLarge.addEventListener('mouseout', clearSpecies);
-searchSmall.addEventListener('mouseout', clearSpecies);
-searchPike.addEventListener('mouseout', clearSpecies);
-searchSteel.addEventListener('mouseout', clearSpecies);
+searchLarge.addEventListener('mouseover', clearSpecies);
+searchSmall.addEventListener('mouseover', clearSpecies);
+searchPike.addEventListener('mouseover', clearSpecies);
+searchSteel.addEventListener('mouseover', clearSpecies);
 
 
 
