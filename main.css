@@ -172,14 +172,35 @@
   .fish{
     /* position: relative; */
     display: flex;
+    /* transition: transform 1.55s; */
     /* justify-content: space-between; */
     /* width: 90%;  */
   }
+ 
   #Pike ,#large, #small, #steelhead {
     border-radius: 2em;
+    transition: transform 1.8s;
+    /* animation:  shake 0.5s linear infinite; */
+    transform-origin: left center
   }
- #Pike:active ,#large:active, #small:active, #steelhead:active {
-    background: black;
+
+  
+
+  @keyframes shake{
+    0%{
+      transform: rotate(10deg);
+    }
+    50%{
+      transform: rotate(-10deg);
+    }
+  }
+  #Pike:active ,#large:active, #small:active, #steelhead:active {
+    background-color: black;
+  }
+  #Pike:hover ,#large:hover, #small:hover, #steelhead:hover {
+    border-radius: 2em;
+    cursor: grabbing;
+    animation: shake .2s linear infinite;
   }
   .species{
     margin-left: 4em;
@@ -187,8 +208,6 @@
     color:#fff;
     font-size: 18px;
     font-style: italic;
-    transition: width 2s, height 4s;
-    
   }
   #fishExplination{
     color: #fff;
@@ -201,3 +220,4 @@
     margin-left: .5em;
     
   }
+ 
