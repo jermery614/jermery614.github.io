@@ -20,8 +20,8 @@ function clearStorage(){
   searchbox.addEventListener('keypress', setQuery);
 
   function setQuery(evt) {
-//     if (evt.keyCode == 13)  
-//     {
+    if (evt.keyCode == 13)  
+    {
       const cityName = localStorage.getItem("City")
       // console.log(cityName)
       if (cityName){
@@ -32,7 +32,7 @@ function clearStorage(){
         getResults(searchbox.value);
       localStorage.setItem("City", searchbox.value);
       }
-//     } 
+    } 
   }
   function getResults (query) {
     fetch(`${api.base}weather?q=${query}&units=imperial&APPID=${api.key}`)
